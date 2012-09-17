@@ -7,12 +7,12 @@ This is jQuery plugin that sync automatically .lrc lyrics with HTML5 audio tag.
 
 --- HTML ---
 
-<link href="kirinlyric.css" rel="stylesheet" type="text/css">
+&gt;link href="kirinlyric.css" rel="stylesheet" type="text/css"&lt;
 
 ...
 
-<audio id="myAudio" controls src="xxx.ogg"></audio>
-<div id="lyrics"></div>
+&gt;audio id="myAudio" controls src="xxx.ogg"&lt;&gt;/audio&lt;
+&gt;div id="lyrics"&lt;&gt;/div&lt;
 
 --- JavaScript ---
 
