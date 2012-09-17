@@ -1,20 +1,23 @@
 @charset "UTF-8";
 body,html {font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
-#lyrics {padding:5px;border:1px solid #333;border-radius:5px;box-shadow:0 0 8px #333;}
+#lyrics {padding:5px;border:1px solid #333;border-radius:5px;box-shadow:0 0 8px #333;font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;}
 #lyrics span{display:;
--webkit-transition-property:color , letter-spacing , height;
+-webkit-transition-property:color , letter-spacing , height , line-height , padding-left;
 -webkit-transition-duration:0.2s;}
-#lyrics span:hover{letter-spacing:2px}
+
 #lyrics span.current , #lyrics span.prev, #lyrics span.next{display:inline;}
 #lyrics span.current{}
 #lyrics span.prev{}
 #lyrics span.next{}
 
-#lyrics span{display:block;overflow:hidden;height:0px;font-size:14px;}
-#lyrics span.current , #lyrics span.prev, #lyrics span.next , #lyrics span.far-prev, #lyrics span.far-next{display:block;height:20px;}
-#lyrics span.current{height:20px;letter-spacing:2px;color:#090;font-weight:bold;}
-#lyrics span.far-prev{height:20px;color:#CCC;}
-#lyrics span.prev{height:20px;}
-#lyrics span.next{height:20px;color:#999;}
-#lyrics span.far-next{height:20px;color:#CCC;}/* CSS Document */
+#lyrics span{display:block;overflow:hidden;height:24px;font-size:18px;}
+#lyrics span.current , #lyrics span.prev, #lyrics span.next , #lyrics span.far-prev, #lyrics span.far-next{display:block;height:24px;line-height:24px;margin:2px 0;}
+#lyrics span.current{height:36px;line-height:36px;letter-spacing:2px;color:#090;font-weight:bold;background:url(ico_kirin.jpg) left center no-repeat;padding-left:50px;}
+#lyrics span.far-prev{height:24px;}
+#lyrics span.prev{height:24px;}
+#lyrics span.next{height:24px;}
+#lyrics span.far-next{height:24px;}/* CSS Document */
 
+#lyrics > div {width:33%;float:left;}
+.blank-row {display:none!important;}
+hr.clearing {clear:both;}
