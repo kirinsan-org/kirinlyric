@@ -1,6 +1,6 @@
 kirinlyric
 ==========
-
+![logo](http://world.kirinsan.org/kirinlyric-demo/djetz.jpg "")
 This is jQuery plugin that sync automatically .lrc lyrics with HTML5 audio tag.
 
 ========== USAGE ==========
