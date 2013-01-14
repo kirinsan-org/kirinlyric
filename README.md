@@ -1,28 +1,31 @@
-kirinlyric
+Kirinlyric
 ==========
 ![logo](http://world.kirinsan.org/kirinlyric-demo/djetz.jpg "")
+
 This is jQuery plugin that sync automatically .lrc lyrics with HTML5 audio tag.
 
-========== USAGE ==========
+# USAGE
 
---- HTML ---
+## HTML side
 
-&lt;link href="kirinlyric.css" rel="stylesheet" type="text/css"&gt;
+    <link href="kirinlyric.css" rel="stylesheet" type="text/css">
+    ...
+    <audio id="myAudio" controls src="xxx.ogg"&gt;&lt;/audio>
+    <div id="lyrics"&gt;&lt;/div>
 
-...
+## JavaScript side
 
-&lt;audio id="myAudio" controls src="xxx.ogg"&gt;&lt;/audio&gt;
-&lt;div id="lyrics"&gt;&lt;/div&gt;
+    // require loading jQuery above
+    var lrcText = [
+      '[00:01.22]Text 1',
+      '[00:03.42]Text 2',
+      '[00:06.88]Text 3'
+    ].join('\r\n');
+    $('#myAudio').kirinlyric({
+      target : '#lyrics',
+      lrc : lrcText
+    });
 
---- JavaScript ---
-
-var lrcText = [
-	'[00:01.22]Text 1',
-	'[00:03.42]Text 2',
-	'[00:06.88]Text 3'
-].join('\r\n');
-
-$('#myAudio').kirinlyric({
-	target : '#lyrics',
-	lrc : lrcText
-});
+# DEMO
+* http://world.kirinsan.org/kirinlyric-demo/ simple usage
+* http://kirinsan.org/kirinsan.html use with BigVideo.js
